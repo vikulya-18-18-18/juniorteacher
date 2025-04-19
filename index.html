@@ -51,16 +51,22 @@
                             <div class="send_wrapper">
                                 <h1 class="modal_title">
                                     Добро пожаловать в мой класс
-                                </h1>
-                                <form>
-                                    <div class="send_form">
-                                        <div>
-                                            <input type="text" class="form1 formstyle" placeholder="Ваше имя">
-                                            <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
-                                        </div>
-                                        <textarea cols="30" rows="10" class="form3 formstyle" placeholder="Сообщение"></textarea>
-                                        <button class="modal_button">ОТПРАВИТЬ</button>
-                                    </div>
+                           <input type="text" class="form1 formstyle" placeholder="Ваше имя">    
+                                   <form
+  action="https://formspree.io/f/meoayebq"
+  method="POST"
+>
+  <label>
+    Ваш email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Сообщение:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">ОТПРАВИТЬ</button>
+</form> 
                                 <form><input type="hidden" name="_next" value="https://ваш-сайт.github.io/спасибо.html">
                <meta name="referrer" content="origin">    
                             </div>
